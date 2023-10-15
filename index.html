@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+   <title>Hack Help</title>
+   <link rel="icon" type="image/png" href="">
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+   <script src="https://kit.fontawesome.com/45123220ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <!-- NAVBAR SECTION -->
+   <nav class = "navbar">
+       <div class="navbar__container">
+           <a href="?" id="navbar__logo"> 
+               <i class="fa-solid fa-desktop"></i> Hack Help</a>
+           <div class="navbar__toggle" id="mobile-menu">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+           </div>
+           <ul class="navbar__menu">
+              
+               <li class="navbar__item">
+                   <a href="./resources.html" class="navbar__links">Resources</a>
+               </li>
+               <li class="navbar__btn">
+                   <a href="index.html" class="button">Home</a>
+               </li>
+           </ul>
+       </div>
+   </nav>
+
+   <div class="everythingButNav">
+       <div class="navImg--container">
+           <img src="images/topBar.jpeg" alt="" id="topBar__img">
+       </div>
+   <!--HEADER SECTION-->
+   <div class="header">
+      
+       <div class="header__container">
+           <div class="header__img--container">
+               <img src="images/computer.png" alt="" id="header__img"  style="width:100%;">
+           </div>
+
+           <div class="header__content">
+               <div class="header__container1">
+               <img src="images/speechBubble.png" alt="Snow" style="width:90%;" id="speechImg">
+               </div>
+               <div class="form__div" >
+               <form id="hackathon-form">
+
+                   <div class="form__title">
+                       <p>Generate Hackathon Ideas</p>
+                   </div>
+
+                   <div class="form__questions">
+                   <div class="form__prompt">
+                       <div class="form__label"><label for="theme">Hackathon Theme:</label></div>
+                       <div class="form__input"><input type="text" id="theme" name="theme" required></div>
+                   </div>
+
+                   <div class="form__prompt">
+                       <div class="form__label"><label for="specializations">Team Member Specializations:</label></div>
+                       <div class="form__input"><input type="text" id="specializations" name="specializations" required></div>
+                   </div>
+              
+                   <div class="form__prompt">
+                       <div class="form__label"><label for="experience">Team Member Experience Level:</label></div>
+                       <div class="form__input"><input type="text" id="experience" name="experience" required></div>
+                   </div>
+
+                   <div class="form__prompt">
+                       <div class="form__label"><label for="experience">Amount of Time:</label></div>
+                       <div class="form__input"><input type="text" id="length" name="length" required></div>
+                   </div>
+               </div>
+
+                   <div class="form__prompt">
+                       <button type="submit" > <span class="text">Generate Hackathon Idea</span></button>
+                   </div>
+
+                   <div class="form__output">
+                       <p>Scroll Down for Generated Idea<!-- This will be output!--></p>
+                   </div>
+              
+               </form>
+           </div>
+           </div>
+          
+       </div>
+   </div>
+   <div class="navImg--container">
+       <img src="images/middleBar.png" alt="" id="middleBar__img">
+   </div>
+   <div class="generated__idea">
+       <p>Generate an idea!</p>
+       <div class="aiResponseBox">
+       <span id="aiResponse"></span>
+    </div>
+   </div>
+   <div class="navImg--container">
+       <img src="images/bottomBar.png" alt="" id="bottomBar__img">
+   </div>
+   <!-- Main SECTION-->
+   <div class="main" id = "jump__main">
+       <div class="main__container">
+           <div class="main__content">
+               <h1>Hack Help</h1>
+               <div class="main__content__box">
+                   <p>Provide. Motivate. Inspire.<br>
+                       Welcome to Hack Help, the place for hackathon inspiration, ideas,
+                       learning resources, and valuable tips! The first steps into hackathons
+                       can be overwhelming, but Hack Help is here to guide you through it.
+                   </p>
+               </div>
+              
+           </div>
+           <!--<div class="header__img--container">
+               <img src="images/pic1.svg" alt="pic" id="header__img">
+           </div>-->
+       </div>
+       
+   </div>
+   <script src="./app.js"></script>
+</body>
+</html>
+
+
+
